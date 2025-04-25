@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff6f00;
+      margin-bottom: 30px;
+    }
+
+    .btn-back {
+      display: inline-block;
+      background-color: #ef6c00;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      background-color: #bf360c;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #ff9800;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #f57c00;
+    }
+
+    .form-group {
+      background-color: #fffde7;
+      border: 1px solid #ffecb3;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="home.html" class="btn-back" target="konten">← Kembali ke Home</a>
+
+    <h2>Form Pendaftaran</h2>
+
+    <form method="post" action="proses.php">
+      <table class="form-group">
+        <tr>
+          <td>Nama</td>
+          <td><input type="text" name="nama" required /></td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>
+            <select name="jk" required>
+              <option value="">-- Pilih Jenis Kelamin --</option>
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Agama</td>
+          <td>
+            <input type="radio" name="agama" value="Islam"> Islam<br>
+            <input type="radio" name="agama" value="Katolik"> Katolik<br>
+            <input type="radio" name="agama" value="Protestan"> Protestan<br>
+            <input type="radio" name="agama" value="Hindu"> Hindu<br>
+            <input type="radio" name="agama" value="Budha"> Budha
+          </td>
+        </tr>
+        <tr>
+          <td>Hobi</td>
+          <td>
+            <input type="checkbox" name="hobby[]" value="Browsing"> Browsing<br>
+            <input type="checkbox" name="hobby[]" value="Game"> Game<br>
+            <input type="checkbox" name="hobby[]" value="Olahraga"> Olahraga
+          </td>
+        </tr>
+        <tr>
+          <td>Alamat</td>
+          <td><textarea name="alamat" rows="4" required></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Batal">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+<head>
+  <title>Internal Style Sheet</title>
+  <style type="text/css">
+    .latselector {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      color: #cc0000;
+    }
+
+    .bebas {
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: underline;
+      color: #cc0000;
+    }
+
+    .kelas {
+      font-family: "Courier New", Courier, monospace;
+      text-align: center;
+      color: #cc0000;
+    }
+
+    .latselectorid {
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      text-align: center;
+      color: #cc0000;
+    }
+
+    .halaman {
+      margin: 1cm 2cm 1cm 1cm; /* top right bottom left */
+      background-color: #d4edda;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <a href="home.html" target="konten" style="display:inline-block; margin-bottom: 10px; background-color:#4a148c; color:#fff; padding:5px 10px; text-decoration:none; border-radius:5px;">← Kembali ke Home</a>
+  <div class="container">
+    
+    <h2>1. Latselector</h2>
+    <div class="latselector">
+      <p>Contoh penggunaan selector merubah body secara otomatis</p>
+      <p>Menggunakan jenis huruf Times New Roman</p>
+      <p>Besar huruf 16 pixel dan berwarna merah</p>
+    </div>
+
+    <h2>2. Latselectorbebas</h2>
+    <p>Ini tidak pakai selector bebas</p>
+    <div class="bebas">
+      <p>Ini pakai Selector bebas menggunakan jenis huruf Times New Roman</p>
+      <p>Dan cetak miring dan berwarna merah</p>
+    </div>
+
+    <h2>3. Latselectorclass</h2>
+    <div class="kelas">
+      <p>Ini dikenai selector pakai kelas menggunakan jenis huruf Courier New, rata tengah dan berwarna merah</p>
+    </div>
+    <p>Ini tidak dikenai efek CSS karena paragraf ini tidak disertai class kelas</p>
+
+    <h2>4. Latselectorid</h2>
+    <h4 id="pakaiID" class="latselectorid">
+      Menggunakan selector ID menggunakan jenis huruf Courier New, rata tengah, cetak miring dan berwarna merah
+    </h4>
+
+    <h2>5. Lathalaman</h2>
+    <div class="halaman">
+      <p>Format halaman website dengan batas kiri 1 cm, batas kanan 2 cm, batas atas 1 cm dan batas bawah 1 cm, background warna hijau</p>
+    </div>
+    
+  </div>
+</body>
+</html>

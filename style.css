@@ -1,0 +1,88 @@
+/* Gaya umum halaman */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e1bee7, #bbdefb);
+  color: #333;
+  margin: 0;
+  padding: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animasi masuk lembut */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tombol kembali */
+.btn-kembali {
+  display: inline-block;
+  background-color: #6a1b9a;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(106, 27, 154, 0.3);
+}
+
+.btn-kembali:hover {
+  background-color: #8e24aa;
+  transform: scale(1.05);
+}
+
+/* Kontainer isi tengah */
+.container {
+  background: linear-gradient(to bottom right, #ffffff, #f3e5f5);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  border-left: 6px solid #6a1b9a;
+  border-right: 6px solid #64b5f6;
+}
+
+/* Judul dan teks */
+h1 {
+  color: #4a148c;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  font-size: 36px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.04);
+  color: #7b1fa2;
+}
+
+/* Paragraf utama */
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  background-color: #ede7f6;
+  padding: 15px;
+  border-left: 4px solid #ab47bc;
+  border-radius: 8px;
+}
+
+/* Tambahan dekoratif teks quote/info */
+.info-box {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #d1c4e9;
+  border-left: 5px solid #512da8;
+  border-radius: 10px;
+  font-style: italic;
+  color: #4e3c76;
+}

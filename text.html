@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Format Teks Kaputama</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e1bee7, #bbdefb);
+      color: #333;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 30px;
+      background: #ffffffd9;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .btn-back {
+      display: inline-block;
+      background-color: #6a1b9a;
+      color: #fff;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-back:hover {
+      background-color: #4a148c;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #4a148c;
+      margin-top: 20px;
+    }
+
+    blockquote {
+      background-color: #ede7f6;
+      border-left: 5px solid #6a1b9a;
+      padding: 15px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    pre {
+      background: #f3e5f5;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+      border-left: 4px solid #8e24aa;
+    }
+
+    .format-text {
+      background: #f9fbe7;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #cddc39;
+      margin-top: 20px;
+    }
+
+    .format-text b,
+    .format-text i,
+    .format-text u,
+    .format-text strike,
+    .format-text big,
+    .format-text small {
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #1a237e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .image-section img {
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-section p {
+      margin-bottom: 5px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #999;
+      margin: 30px 0;
+    }
+
+    ol li {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+
+    .link-list a {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .highlight-text {
+      background: #fce4ec;
+      padding: 10px;
+      border-left: 5px solid #ec407a;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="home.html" class="btn-back">← Kembali ke Home</a>
+
+    <h1>Heading Satu</h1>
+    <h2>Heading Dua</h2>
+    <h3>Heading Tiga</h3>
+    <h4>Heading Empat</h4>
+    <h5>Heading Lima</h5>
+    <h6>Heading Enam</h6>
+
+    <div class="highlight-text">
+      Contoh Format Text - Ini adalah pindah garis
+    </div>
+
+    <p>Ini adalah sebuah paragraf, jaraknya lebih jauh dengan br</p>
+    <hr />
+
+    <blockquote>"Membuat web gampang menurut ahlinya"</blockquote>
+
+    <pre>Membuat web adalah Gampang menurut ahlinya</pre>
+
+    <div class="format-text">
+      <b>Tulisan Bold</b><br>
+      <i>Cetak Miring</i><br>
+      <u>Garis Bawah</u><br>
+      <strike>Garis Di Tengah</strike><br>
+      <big>Huruf lebih besar</big><br>
+      <small>Huruf lebih kecil</small><br>
+      a<sub>a</sub><br>
+      4<sup>2</sup><br>
+    </div>
+
+    <br>
+    <font size="+1">Besar Huruf +1</font><br>
+    <font face="Arial, Helvetica, sans-serif">Jenis Huruf Arial</font><br>
+    <font color="#FF0000">Warna Huruf Merah (Hex)</font><br>
+    <font color="red">Warna Huruf Merah (Nama)</font><br>
+    <font face="Arial, Helvetica, sans-serif" size="+2" color="#0000FF">Gabungan Huruf</font><br><br>
+
+    <div class="link-list">
+      <a href="https://chatgpt.com/" target="_blank">Klik Di Sini Untuk Menggunakan ChatGPT</a>
+      <a href="https://www.youtube.com/" target="_blank">Klik Di Sini Untuk Nonton YouTube</a>
+    </div>
+
+    <h2>Program Studi</h2>
+    <ol type="1">
+      <li>Program S-1
+        <ul type="circle">
+          <li>Teknik Informatika</li>
+          <li>Sistem Informasi</li>
+        </ul>
+      </li>
+      <li>Program D-III
+        <ul type="disc">
+          <li>Teknik Informatika</li>
+          <li>Manajemen Informatika</li>
+          <li>Komputer Akuntansi</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Gambar</h2>
+    <div class="image-section">
+      <p>Gambar Tanpa Format</p>
+      <img src="C:\Users\Admin\pemograman-web\pictures\kaputama.jpeg" height="100" alt="Kapu Tama Tanpa Format">
+      <p>Gambar Dengan Format hspace</p>
+      <img src="C:\Users\Admin\pemograman-web\pictures\kaputama.jpeg" height="100" style="margin-left: 100px;" alt="Kapu Tama HSpace">
+      <p>Gambar Dengan Border</p>
+      <img src="C:\Users\Admin\pemograman-web\pictures\kaputama.jpeg" height="100" style="border: 4px solid #6a1b9a;" alt="Kapu Tama Border">
+    </div>
+  </div>
+</body>
+</html>

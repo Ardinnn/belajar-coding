@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .btn-home {
+    background-color: #6a0dad;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-home:hover {
+    background-color: #8a2be2;
+  }
+  
+  .header {
+    text-align: center;
+    color: #6a0dad;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .menu, .info, .form-section, .data-table {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .menu h3, .info h3 {
+    color: #6a0dad;
+    border-bottom: 2px solid #6a0dad;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .menu ul, .info ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  .menu ul li, .info ul li {
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  .info ul li > ul,
+  .info ul li > ol {
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .biodata-form table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .biodata-form th {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+  }
+  
+  .biodata-form td {
+    padding: 6px;
+  }
+  
+  .biodata-form input[type="text"],
+  .biodata-form select,
+  .biodata-form textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .biodata-form input[type="file"] {
+    margin-top: 6px;
+  }
+  
+  .biodata-form button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-top: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .biodata-form button:hover {
+    background-color: #8a2be2;
+  }
+  
+  .data-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .data-table th {
+    background-color: #6a0dad;
+    color: white;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #fafafa;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  

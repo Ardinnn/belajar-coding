@@ -1,0 +1,252 @@
+/* Base Styles (Mobile First) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px; /* Menggunakan px sebagai base untuk konsistensi */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8bbd0, #fce4ec);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #880e4f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem; /* Menggunakan rem untuk font size */
+  position: relative;
+}
+
+.menu-toggle {
+  display: none; /* Awalnya disembunyikan */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.toggle-mode {
+  text-align: center;
+  margin: 1rem auto;
+  width: 90%;
+}
+
+.toggle-mode button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4a148c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.toggle-mode button:hover {
+  background-color: #6a1b9a;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column; /* Mobile: kolom */
+  min-height: 0;
+}
+
+.sidebar {
+  width: 100%;
+  background-color: #fce4ec;
+  border-bottom: 3px solid #f48fb1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: none; /* Awalnya disembunyikan di mobile */
+}
+
+.sidebar.active {
+  display: block; /* Muncul saat toggle diaktifkan */
+}
+
+.content {
+  flex: 1;
+  background-color: #fff0f6;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+h3 {
+  text-align: center;
+  color: #ad1457;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+}
+
+ul li a {
+  display: block;
+  background-color: #f8bbd0;
+  color: #4a148c;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+ul li a:hover {
+  background-color: #f06292;
+  color: white;
+  transform: translateX(5px);
+}
+
+/* Menu Aktif */
+ul li a.active {
+  background-color: #d81b60;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Tablet (768px ke atas) */
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+
+  .container {
+    flex-direction: row; /* Sidebar dan content sejajar */
+  }
+
+  .sidebar {
+    width: 220px;
+    display: block;
+    border-right: 3px solid #f48fb1;
+    border-bottom: none;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  iframe {
+    height: 75vh;
+  }
+
+  .menu-toggle {
+    display: none; /* Sembunyikan toggle di tablet/desktop */
+  }
+}
+
+/* Desktop (992px ke atas) */
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+
+  header {
+    padding: 1.25rem;
+    font-size: 1.75rem;
+  }
+
+  .sidebar {
+    width: 250px;
+    padding: 1.5rem;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+
+  iframe {
+    height: 80vh;
+  }
+
+  ul li a {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #1c1c1c;
+  color: #f1f1f1;
+}
+
+.dark-mode header {
+  background-color: #333;
+}
+
+.dark-mode .sidebar {
+  background-color: #2c2c2c;
+  border-color: #555;
+}
+
+.dark-mode .content {
+  background-color: #121212;
+}
+
+.dark-mode ul li a {
+  background-color: #333;
+  color: #ff80ab;
+}
+
+.dark-mode ul li a:hover {
+  background-color: #ff4081;
+  color: white;
+}
+
+.dark-mode .toggle-mode button {
+  background-color: #880e4f;
+  color: white;
+}
+
+.dark-mode .toggle-mode button:hover {
+  background-color: #ad1457;
+}
+
+/* Untuk perangkat sangat kecil (kurang dari 400px) */
+@media (max-width: 400px) {
+  html {
+    font-size: 14px;
+  }
+
+  iframe {
+    min-height: 300px;
+    height: 50vh;
+  }
+}
+
