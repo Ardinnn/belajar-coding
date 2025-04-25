@@ -1,0 +1,157 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Tabel</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e1f5fe, #e8f5e9);
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00796b;
+      margin-bottom: 30px;
+    }
+
+    .btn-back {
+      display: inline-block;
+      background-color: #00695c;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      background-color: #004d40;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #81c784;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1f8e9;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #e0f2f1;
+    }
+
+    td:first-child {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="home.html" class="btn-back" target="konten">← Kembali ke Home</a>
+
+    <h2>Daftar Mahasiswa</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Nama Mahasiswa</th>
+          <th rowspan="2">Jurusan</th>
+          <th rowspan="2">Matkul</th>
+          <th rowspan="2">SKS</th>
+          <th rowspan="2">Dosen</th>
+          <th colspan="2">Nilai</th>
+          <th colspan="2">Nilai Akhir</th>
+        </tr>
+        <tr>
+          <th>UTS</th>
+          <th>UAS</th>
+          <th>Huruf</th>
+          <th>Index</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Erik Sigma</td>
+          <td>Teknik Informatika</td>
+          <td>Algoritma Pemograman</td>
+          <td>2</td>
+          <td>Harahap Pasaribu M.Kom</td>
+          <td>80</td>
+          <td>75</td>
+          <td>B</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>Abil Sigma</td>
+          <td>Sistem Informasi</td>
+          <td>Algoritma Pemograman</td>
+          <td>2</td>
+          <td>Harahap Pasaribu M.Kom</td>
+          <td>85</td>
+          <td>90</td>
+          <td>A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>Dimas Sigma</td>
+          <td>Sistem Informasi</td>
+          <td>Algoritma Pemograman</td>
+          <td>2</td>
+          <td>Harahap Pasaribu M.Kom</td>
+          <td>90</td>
+          <td>87</td>
+          <td>C</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>Ridho Sigma</td>
+          <td>Bisnis Digital</td>
+          <td>Algoritma Pemograman</td>
+          <td>2</td>
+          <td>Harahap Pasaribu M.Kom</td>
+          <td>89</td>
+          <td>70</td>
+          <td>A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>Bagas Sigma</td>
+          <td>Manajemen Informatika</td>
+          <td>Algoritma Pemograman</td>
+          <td>2</td>
+          <td>Harahap Pasaribu M.Kom</td>
+          <td>82</td>
+          <td>89</td>
+          <td>B</td>
+          <td>B</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
